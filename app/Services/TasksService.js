@@ -5,7 +5,6 @@ class TasksService {
   addTask(rawTask) {
     ProxyState.tasks = [...ProxyState.tasks, new Task(rawTask.name, rawTask.listId)]
     ProxyState.tasks = ProxyState.tasks
-
   }
 
   deleteTask(id) {

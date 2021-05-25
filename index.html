@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <title>Task Master</title>
 </head>
 
@@ -15,19 +17,20 @@
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
+                <img src="https://lh3.googleusercontent.com/proxy/LTTPQzGuR5-0gjWWyqExjrGlNwd34ugQH4VMzZUKuFLWhQrw7dUZuDEfnxemLYOleY7l-KQgAPZau-EEJdqosY5o0Cx3wWvAnu7sbtzZsy2iCvexwa66y5LgyIcDxZ9KsNwy2jlL2A"
+                    width="45" height="45" alt="" loading="lazy">
                 <span class="ml-2">Task Master</span>
             </a>
         </nav>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid bg-theme">
 
         <form class="row px-5 py-3  d-flex justify-content-start align-items-end"
             onsubmit="app.listsController.addList(event)">
             <div class="col-3">
                 <label for="name" class="text-dark"></label>
                 <input required minlength="3" maxlength="15" type="text" name="name" id="name" class="form-control"
-                    placeholder="Task List" aria-describedby="helpId">
+                    placeholder="new task list" aria-describedby="helpId">
             </div>
             <div class="form col-2">
                 <select class="custom-select" name="color" id="color">
@@ -38,7 +41,7 @@
                     <option>purple</option>
                 </select>
             </div>
-            <button class="btn btn-success">Create List</button>
+            <button class="btn btn-success">create list</button>
         </form>
         <div class="row" id="lists">
             <div class="col-4">

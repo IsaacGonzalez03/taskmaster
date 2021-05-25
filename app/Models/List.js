@@ -18,7 +18,8 @@ export class List {
     <form onsubmit="app.tasksController.addTask(${this.id})">
     <input class="form-control" type="text" placeholder="task" id="name" maxlength="50" minlength="3">
     <button type="submit" class="btn btn-primary" >Add Task</button>
-    <div title="delete" class="btn btn-danger" onclick="app.listsController.deleteList()">Delete List</div>
+    <div title="delete" class="btn btn-danger" onclick="window.confirm('that looks really important, we better not.')">Delete List</div>
+    <div>total tasks: ${this.totalTasks}</div>
     </form>
   </div>
         `
