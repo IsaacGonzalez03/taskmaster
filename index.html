@@ -22,11 +22,11 @@
     </header>
     <main class="container-fluid">
 
-        <form class="row px-5 py-3  d-flex justify-content-start align-items-start"
+        <form class="row px-5 py-3  d-flex justify-content-start align-items-end"
             onsubmit="app.listsController.addList(event)">
             <div class="col-3">
                 <label for="name" class="text-dark"></label>
-                <input required minlength="4" maxlength="15" type="text" name="name" id="name" class="form-control"
+                <input required minlength="3" maxlength="15" type="text" name="name" id="name" class="form-control"
                     placeholder="Task List" aria-describedby="helpId">
             </div>
             <div class="form col-2">

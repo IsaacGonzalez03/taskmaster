@@ -16,8 +16,9 @@ export class List {
     <h6>${this.name}</h6>
     <ul id="tasks">${this.Tasks}</ul>
     <form onsubmit="app.tasksController.addTask(${this.id})">
-    <input class="form-control" type="text" placeholder="task" id="name">
-    <button type="submit" class="btn btn-primary btn-sm float-right" >+</button>
+    <input class="form-control" type="text" placeholder="task" id="name" maxlength="50" minlength="3">
+    <button type="submit" class="btn btn-primary" >Add Task</button>
+    <div title="delete" class="btn btn-danger" onclick="app.listsController.deleteList()">Delete List</div>
     </form>
   </div>
         `

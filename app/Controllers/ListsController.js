@@ -27,5 +27,7 @@ export class ListsController {
     listsService.addList(rawList)
     form.reset()
   }
-
+  deleteList(id) {
+    listsService.deleteList(id)
+  }
 }
