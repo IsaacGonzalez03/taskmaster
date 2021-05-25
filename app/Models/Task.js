@@ -7,13 +7,9 @@ export class Task {
   }
   get Template() {
     return /*html*/ `
-
-
       <li>
       <input type="checkbox">${this.name}
       </li>
-    
-    
    `
   }
 }

@@ -1,6 +1,7 @@
 import { ProxyState } from "../AppState.js "
 
 
+
 export class List {
   constructor(name, color, id = generateId(), completedTasks = 0, totalTasks = 0) {
     this.name = name
